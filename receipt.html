@@ -25,12 +25,60 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.2);
         }
+        .receipt-header{
+            border-bottom: 1px dashed gray;
+        }
         .brand-address{
             text-align: right;
         }
         .brand-mobile{
-            text-align: rightgit ;
+            text-align: right ;
         }
+        .receipt-title{
+            text-align: center;
+            font-size: 30px;
+            margin: 40px 0;
+        }
+        .receipt-body{
+            position: relative;
+            border-bottom: 1px dashed gray;
+        }
+        .receipt-detail{
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            max-width: 20px 0;
+        }
+        .receipt-detail-key{
+            color: grey;
+            width: 30%;
+        }
+        .receipt-detail-value{
+            font-weight: bold;
+            border-bottom: 1px dashed grey;
+            width: 30;
+
+        }
+        /* .account signature{ */
+            /* text-align: right; */
+            /* margin: 50px; */
+            /* margin-top: 80px; */
+        /* } */
+        .stamp{
+            width: 115px;
+            position: absolute;
+            right: 0;
+            bottom: 20px;
+            transform: rotate(-348deg);
+
+        }
+        .receipt-footer{
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+            background-color: #ffca39;
+        }
+
     </style>
 </head>
 <body>
@@ -45,15 +93,56 @@
             404, Above Lotus Hospital,<br>
              Shewalewadi, <br>
              Pune-412307.
-        </p>
-        <p class="brand-mobile">
+             <br>
             +91-7387878063
         </p>
     </div>
     <div class="receipt-body">
+        <h3 class="receipt-title">Payment Receipt</h3>
+        <div class="receipt-detail">
+            <div class="receipt-detail-key">
+                Receipt No. :
+            </div>
+            <div class="receipt-detail-value">
+                7498107639
+            </div>  
+        </div>
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">
+                    Amount:
+                </div>
+                <div class="receipt-detail-value">
+                        50000
+                </div>  
+            </div>
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">
+                    payment:
+                </div>
+                <div class="receipt-detail-value">
+                    UPI
+                </div>  
+            </div>
+            <div class="receipt-detail">
+                <div class="receipt-detail-key">
+                    payment-Date:
+                </div>
+                <div class="receipt-detail-value">
+                9 Dec 2023
+                </div>  
+            </div>
+            <img src="OIP.jpeg." class="stamp">
 
+            <p class="account signature">
+                Accountant signature
+                <br><br><br>
+            <!-- </p> -->
     </div>
+    <p>
+        This is computer generated receipt & doe not require any signature
+    </p>
     <div class="receipt-footer">
+        
     </div>
     </div>
 </body>
